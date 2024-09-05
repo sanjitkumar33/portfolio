@@ -1,0 +1,82 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.sidebar {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    padding-top: 20px;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.sidebar .list-group-item {
+    border: none;
+    font-weight: bold;
+    color: #555;
+}
+
+.sidebar .list-group-item:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.sidebar .list-group-item-action.text-teal {
+    color: teal;
+}
+
+.sidebar-header img {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+.content-wrapper {
+    margin-left: 300px;
+    padding: 20px;
+}
+
+.bg-grey {
+    background-color: #9e9e9e;
+}
+
+.progress-bar {
+    background-color: black;
+}
+.card-img-top3{
+    height: 260px;
+}
+.card-img-top2{
+    height: 284px;
+}
+.foot1{
+    color: white;
+    background-color: #000;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.contact1{
+    background-color: #616161
+}
+.contact2{
+    background-color: #009688;
+}
+.contact3{
+    background-color: #616161;
+}
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}

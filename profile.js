@@ -1,10 +1,17 @@
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const sidebarLinks = document.querySelectorAll("#mySidebar .list-group-item");
+    const sections = document.querySelectorAll("div[id]");
+
+    sidebarLinks.forEach(link => {
+        link.addEventListener("click", function() {
+            sidebarLinks.forEach(link => link.classList.remove("text-teal"));
+            this.classList.add("text-teal");
+
+            const targetSection = document.querySelector(this.getAttribute("href"));
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: "smooth"
+            });
+        });
+    });
+});
