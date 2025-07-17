@@ -3,23 +3,28 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   document.getElementById("formMsg").textContent = "Thank you! Your message has been sent.";
   this.reset();
 });
+// form submission part in html
+
 document.getElementById("contactForm").addEventListener("submit", async function (e) {
   e.preventDefault();
 
-  const name = this.querySelector('input[placeholder="Your Name"]').value;
-  const email = this.querySelector('input[placeholder="Your Email"]').value;
-  const message = this.querySelector('textarea').value;
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
 
-  const response = await fetch("http://localhost:5000/contact", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ name, email, message })
-  });
+  try {
+    const res = await fetch("http://localhost:9955/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, message }),
+    });
 
-  const result = await response.json();
-  document.getElementById("formMsg").textContent = result.message || "Error sending message.";
-  this.reset();
+    const result = await res.json();
+    document.getElementById("formMsg").textContent = result.message;
+    this.reset();
+  } catch (error) {
+    document.getElementById("formMsg").textContent = "Failed to send message.";
+  }
 });
+
 
