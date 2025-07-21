@@ -27,30 +27,6 @@ document.getElementById("contactForm").addEventListener("submit", async function
   }
 });
 
-// form submission part 2
-document.getElementById("contactForm").addEventListener("submit", async function (e) {
-    e.preventDefault(); // prevent page reload
 
-    // Get form data
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-
-    // Send data to backend API
-    const response = await fetch("http://localhost:3000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, message }),
-    });
-
-    if (response.ok) {
-      alert("Message sent successfully!");
-      document.getElementById("contactForm").reset();
-    } else {
-      alert("Failed to send message.");
-    }
-  });
 
 
