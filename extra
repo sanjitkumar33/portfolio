@@ -5,5 +5,38 @@ API integration and authentication features like otp and jwt. I am passionate ab
 applications and always eager to learn new technologies to improve my skill set.  
 
 > you are currently working or left the job.
-//i have recently left my position as a frontend developer at ArenaItech pvt ltd. i am now actively looking for new opportunity
+// i have recently left my position as a frontend developer at ArenaItech pvt ltd. i am now actively looking for new opportunity
 that align with my skills and career goals.
+
+> How many experience in react.js.
+// I have around 1.5 years of experience working with react.js. During this time, I have built responsive user interfaces
+integrated APIs implemented routing and authentication, and worked on state management using hooks and context.
+
+> Can you tell me any project you work on react.js.
+// Project Name: Zomato Clone (Food Delivery Web App)
+Tech Stack: React.js, CSS, JavaScript, API Integration, React Router
+Description:
+I built a Zomato-like food delivery website using React.js. The app allows users to:
+
+Browse a list of restaurants with filters (location, cuisine, price).
+
+View restaurant details, including images and menu.
+
+Add items to a cart and simulate placing an order.
+
+Implement routing using React Router for navigation.
+
+Fetch restaurant data using APIs and manage state using hooks.
+
+Project Name: Online Payment Solution Aggregator
+Tech Stack: React.js, Node.js, MongoDB, JWT, OTP, REST APIs
+Description:
+This project is a platform for managing multiple payment gateways in one place. My key contributions:
+
+Built the frontend UI in React.js with responsive design.
+
+Integrated user login with mobile OTP and JWT authentication.
+
+Handled secure form submission and API calls to backend.
+
+Used controlled forms with custom validation.
