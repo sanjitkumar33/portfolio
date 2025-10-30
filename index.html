@@ -2,129 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio </title>
-  <link rel="stylesheet" href="profile.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanju Kumar | Developer Portfolio</title>
+  <link rel="stylesheet" href="profile.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-a4f8BtfxWdnGp8zTk1y9VDfF2DtcYvPUf4ETmZzDNtLbW6IQ2DN8ldo6X8dKZZYSm9d9Mqvdy+qhm/3p3eN8VA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
 </head>
 <body>
-  <header>
-    <h1>Sanjit Kumar</h1>
+  <!-- ===== HEADER ===== -->
+  <header class="navbar">
+    <div class="logo">Sanjit<span>Dev</span></div>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section id="home">
-    <h2>Welcome to My Portfolio</h2>
-    <p>I'm a Front-End Developer skilled in React, JavaScript, and web design.</p>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hi! I'm Sanjit. I build modern, responsive websites and web applications using HTML, CSS, JavaScript, Node.js, React.js, MongoDb.</p>
-  </section>
-
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project">
-      <h3>Zomato Clone Website</h3>
-      <p>A responsive food delivery web application inspired by Zomato, built with React.js to showcase restaurant listings, menus, and online ordering features. The platform allows users to search and filter restaurants by cuisine, location, and ratings, and place orders seamlessly.</p>
-      <h4>Key Features:</h4>
-      <li>Search and filter restaurants by location, cuisine, and ratings.</li>
-      <li>View detailed restaurant pages with menus, prices, and reviews.</li>
-      <li>Add items to cart and manage orders.</li>
-      <li>Responsive design for mobile, tablet, and desktop.</li>
-      <li>Integrated with API for dynamic data rendering.</li>
-      <h4>Tech Stack:</h4>
-      <li>Frontend: React.js, HTML5, CSS3, JavaScript (ES6)</li>
-      <li>Backend (optional if implemented): Node.js, Express.js, MongoDB</li>
-      <li>Styling: Tailwind CSS / Bootstrap (your choice)</li>
-      <h4>Live Demo: <span>Live  Project</span></h4>
-      <h4>Source Code: <span>GitHub Repository</span></h4>
-    </div>
-    <div class="project">
-      <h3>PayUGuru – Online Payment Solution Aggregator</h3>
-      <p>PayUGuru is a modern online payment solution aggregator that enables businesses to accept and manage digital payments seamlessly. By integrating multiple payment services into a single platform, PayUGuru eliminates the complexity of working with different banks and payment providers individually.</p>
-      <p>Our platform specializes in UPI-first payment solutions, offering a transparent, cost-effective, and developer-friendly way for merchants to collect payments anytime, anywhere.</p>
-      <h4>Key Features</h4>
-      <li>UPI Integration – Supports UPI Intent, QR code payments, and dynamic UPI IDs.</li>
-      <li>Quick Onboarding – Simple registration and minimal documentation for fast setup.</li>
-      <li>Multiple Payment Partners – Ensures higher success rates and reduced downtime.</li>
-      <li>Secure Transactions – PCI-DSS compliance and RBI-aligned policies.</li>
-      <li>Custom APIs & Webhooks – Flexible integration for websites, apps, and POS systems.</li>
-      <h4>Tech Stack</h4>
-      <li>API Integration – REST APIs with sample code and documentation.</li>
-      <li>Hosted Checkout – Ready-to-use payment pages for quick launch.</li>
-      <li>QR Code Payment – Auto-generated dynamic QR for every transaction.</li>
-      <li>Webhooks – Real-time transaction status updates.</li>
-      <h4>Live Demo: <span>Live  Project</span></h4>
-      <h4>Source Code: <span>GitHub Repository</span></h4>
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Sanjit Kumar</span></h1>
+      <h2>Front-End Developer | React.js Specialist</h2>
+      <p>I build modern, responsive web apps with clean UI and optimized performance.</p>
+      <a href="#projects" class="btn">View My Work</a>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-        <form id="contactForm">
-          <input type="text" id="name" placeholder="Your Name" required />
-          <input type="email" id="email" placeholder="Your Email" required />
-          <textarea id="message" placeholder="Message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-    <p id="formMsg"></p>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-list">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript (ES6+)</div>
+      <div class="skill">React.js</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">MongoDB</div>
+    </div>
   </section>
 
-  <footer>
-  <div class="footer-container">
-    
-    <!-- Company Info -->
-    <div class="footer-section">
-      <h4>About Us</h4>
-      <p>&copy; <span id="year"></span> Sanjit Kumar. All rights reserved.</p>
-      <p>Email: abc@gmail.com</p>
-      <p>Phone: +91-0000000000</p>
-    </div>
-
-    <!-- Quick Links -->
-    <div class="footer-section">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="/terms-of-use.html">Terms of Use</a></li>
-        <li><a href="/shop.html">Our Shop</a></li>
-        <li><a href="/contact.html">Contact Us</a></li>
-      </ul>
-    </div>
-
-    <!-- Navigation -->
-    <div class="footer-section">
-      <h4>Navigation</h4>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contacts</a></li>
-      </ul>
-    </div>
-
-    <!-- Social Media -->
-    <div class="footer-section">
-      <h4>Follow Us</h4>
-      <div class="social-links">
-        <ul>
-          <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-          <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-          <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-        </ul>
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <h3>Online Payment Aggregator</h3>
+        <p>Built with React.js and integrated with multiple payment gateways for seamless transactions.</p>
+        <a href="#" class="btn small">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Zomato Clone</h3>
+        <p>A fully responsive food ordering web app built using React.js and modern CSS.</p>
+        <a href="#" class="btn small">View Project</a>
       </div>
     </div>
+  </section>
 
-  </div>
-</footer>
+  <!-- ===== CONTACT ===== -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <p>Let’s connect! You can reach me via:</p>
 
-  <script src="profile.js"></script>
+  <ul class="contact-list">
+    <li>
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:kumarsan@gmail.com">kumarsan@gmail.com</a>
+    </li>
+    <li>
+      <i class="fa-brands fa-linkedin"></i>
+      <a href="#" target="_blank">linkedin.com/in/sanjukumar</a>
+    </li>
+    <li>
+      <i class="fa-brands fa-github"></i>
+      <a href="#" target="_blank">github.com/sanjukumar</a>
+    </li>
+  </ul>
+</section>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Sanjit Kumar. All rights reserved.</p>
+  </footer>
 </body>
 </html>
